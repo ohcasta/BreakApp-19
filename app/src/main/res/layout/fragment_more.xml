@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/galaxia"
+    tools:context=".MoreFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageButton
+                android:id="@+id/recomendacionButton"
+                android:layout_width="200dp"
+                android:layout_height="175dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/buho"
+                android:scaleType="fitCenter"
+                />
+            <ImageButton
+                android:id="@+id/descubreButton"
+                android:layout_width="200dp"
+                android:layout_height="185dp"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@id/recomendacionButton"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/observacion"
+                android:scaleType="fitCenter"
+                />
+            <ImageButton
+                android:id="@+id/ranking"
+                android:layout_width="200dp"
+                android:layout_height="185dp"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@id/descubreButton"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/corona"
+                android:scaleType="fitCenter"
+                />
+            <ImageButton
+                android:id="@+id/search"
+                android:layout_width="200dp"
+                android:layout_height="185dp"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@id/ranking"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/lupa"
+                android:scaleType="fitCenter"
+                />
+
+            <ImageButton
+                android:id="@+id/visita"
+                android:layout_width="200dp"
+                android:layout_height="185dp"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@id/search"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/edificio"
+                android:scaleType="fitCenter"
+                />
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

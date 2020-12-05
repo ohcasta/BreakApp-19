@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.proyecto_ed_vd">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/breakapplogo"
+        android:label="BreakApp-19"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".InfoActivity"
+            android:parentActivityName=".DashBoardActivity"/>
+        <activity
+            android:name=".Visita"
+            android:parentActivityName=".DashBoardActivity" />
+        <activity
+            android:name=".Busqueda"
+            android:parentActivityName=".DashBoardActivity" />
+        <activity android:name=".PostDetailActivity" />
+        <activity
+            android:name=".Ranking"
+            android:parentActivityName=".DashBoardActivity" />
+        <activity android:name=".PostLikedByActivity" />
+        <activity android:name=".ThereProfileActivity" />
+        <activity
+            android:name=".DescubreActivity"
+            android:parentActivityName=".DashBoardActivity" />
+        <activity
+            android:name=".RecomendacionActivity"
+            android:parentActivityName=".DashBoardActivity" />
+        <activity android:name=".AddPostActivity" />
+        <activity
+            android:name=".Chat_Activity"
+            android:parentActivityName=".DashBoardActivity"
+            android:theme="@style/AppThemeNo" />
+        <activity android:name=".LoginActivity" />
+        <activity android:name=".DashBoardActivity" />
+        <activity android:name=".RegisterActivity" />
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

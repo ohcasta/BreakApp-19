@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ciudad"
+    tools:context=".RegisterActivity">
+
+    <ImageView
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:src="@drawable/registerimage"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:id="@+id/emailTIL">
+        <EditText
+            android:id="@+id/emailEt"
+            android:inputType="textEmailAddress"
+            android:textColorHint="@color/colorWhite"
+            android:hint="Email"
+            android:textColor="@color/colorWhite"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:id="@+id/passwordTIL"
+        android:layout_below="@id/emailTIL"
+        app:passwordToggleEnabled="true">
+        <EditText
+            android:id="@+id/passwordEt"
+            android:inputType="textPassword"
+            android:hint="Password"
+            android:textColor="@color/colorWhite"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/registerBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_below="@+id/checkBox"
+        android:layout_marginTop="27dp"
+        android:text="Registrarse" />
+
+    <TextView
+        android:id="@+id/have_accountTv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/registerBtn"
+        android:layout_alignParentBottom="true"
+
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="21dp"
+        android:layout_marginBottom="72dp"
+        android:text="Ya tienes cuenta? Ingresa"
+        android:textAlignment="center"
+        android:textColor="@color/colorBlack" />
+
+    <CheckBox
+        android:id="@+id/checkBox"
+        android:layout_width="168dp"
+        android:layout_height="56dp"
+        android:layout_below="@+id/passwordTIL"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="33dp"
+        android:textColor="@color/colorWhite"
+        android:text="Empresa" />
+
+
+</RelativeLayout>
